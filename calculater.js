@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let equalTo = document.querySelector('#equalTo');
     let delete_single_num = document.querySelector('#delete_single_num');
     
-    let Normal_btn = document.querySelectorAll('#Normal_btn');  //querySelectorAll :means
+    let Normal_btn = document.querySelectorAll('#Normal_btn');   
     
-    let initial_value = "";  //"" is it means empty /nothing
+    let initial_value = "";   
     
-    Normal_btn.forEach((Normal_btn, index)=>{     // for each '(Normal_btn, index)' 
+    Normal_btn.forEach((Normal_btn, index)=>{      
     Normal_btn.addEventListener('click', function(){
-    let text = this.innerHTML;  //what is the 'this ' 
+    let text = this.innerHTML;   
     initial_value += text;
     result.innerHTML = initial_value;
     });
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
     });
     
-    /*dark_mode*/                                       ////???
-    let dark_mode_status = false;           ///dark_mode_status
+    /*dark_mode*/                                        
+    let dark_mode_status = false;            
     dark_mode_btn.addEventListener('click', function(){
     body.classList.toggle('dark_mode_active');
     if (dark_mode_status == false) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     initial_value = "";
     });
     
-    /*delete single number*/  //substring(0,result.innerHTML.length-1)
+    /*delete single number*/   
     delete_single_num.addEventListener('click', function(){
     result.innerHTML = result.innerHTML.substring(0,result.innerHTML.length-1);
     initial_value = result.innerHTML;
