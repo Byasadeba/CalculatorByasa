@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     let body = document.querySelector('body');
     let result = document.querySelector('#result');
-    
     let dark_mode_btn = document.querySelector('.dark_mode_btn');
     let clear = document.querySelector('#clear');
     let history = document.querySelector('#history');
