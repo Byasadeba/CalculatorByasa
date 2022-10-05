@@ -9,45 +9,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link href="calculator.css" rel="stylesheet">
 </head>
+
 <body>
+
+    <div id="container" onclick="launchCalculator();" >
+        <button class="coupon">
+            <span>Click/tap here to turn on the Calculator</span>
+        </button>
+    </div>
     <div class="main">
-        <div class="display"> 
+        <div class="display">
             <button class="dark_mode_btn"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
             <p id="history"><i class="fa-sharp fa-solid fa-clock-rotate-left" aria-hidden="true"></i>&nbsp;History</p>
             <h2 id="result"></h2>
         </div>
-        <div class="buttons"> 
-            <button id="clear">C</button> 
-            <button id="delete_single_num"><i class="fa fa-scissors"aria-hidden="true"></i></button> 
+        <div class="buttons">
+            <button id="clear">C</button>
+            <button id="delete_single_num"><i class="fa fa-scissors" aria-hidden="true"></i></button>
             <button id="Normal_btn">/</button>
             <!-- <button type="button" class="btn btn-primary">/</button>  -->
-            <button id="Normal_btn">*</button> 
+            <button id="Normal_btn">*</button>
         </div>
-        <div class="buttons"> 
-            <button id="Normal_btn">7</button> 
+        <div class="buttons">
+            <button id="Normal_btn">7</button>
             <button id="Normal_btn">8</button>
-            <button id="Normal_btn">9</button> 
-            <button id="Normal_btn">-</button> 
+            <button id="Normal_btn">9</button>
+            <button id="Normal_btn">-</button>
         </div>
-        <div class="buttons"> 
-            <button id="Normal_btn">4</button> 
-            <button id="Normal_btn">5</button> 
-            <button id="Normal_btn">6</button> 
-            <button id="Normal_btn">+</button> 
+        <div class="buttons">
+            <button id="Normal_btn">4</button>
+            <button id="Normal_btn">5</button>
+            <button id="Normal_btn">6</button>
+            <button id="Normal_btn">+</button>
         </div>
-        <div class="buttons"> 
-            <button id="Normal_btn">1</button> 
-            <button id="Normal_btn">2</button> 
-            <button id="Normal_btn">3</button> 
-            <button id="Normal_btn">.</button> 
+        <div class="buttons">
+            <button id="Normal_btn">1</button>
+            <button id="Normal_btn">2</button>
+            <button id="Normal_btn">3</button>
+            <button id="Normal_btn">.</button>
         </div>
-        <div class="buttons"> 
-            <button id="Normal_btn">0</button> 
+        <div class="buttons">
+            <button id="Normal_btn">0</button>
             <button id="Normal_btn">00</button>
-             <button id="equalTo">=</button> 
+            <button id="equalTo">=</button>
         </div>
     </div>
     <footer>
@@ -55,4 +62,5 @@
     </footer>
 </body>
 <script src="calculater.js"></script>
+
 </html>

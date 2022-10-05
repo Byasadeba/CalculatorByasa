@@ -56,3 +56,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     });
+
+
+    function launchCalculator() { 
+        let overlay = document.getElementById("container");
+        overlay.style.display = "none"; 
+        let body = document.querySelector('body');
+        body.style.background ="white";
+    }
+     
