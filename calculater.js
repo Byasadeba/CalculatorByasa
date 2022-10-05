@@ -62,13 +62,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function launchCalculator() { 
         let overlay = document.getElementById("container");
         overlay.style.visibility='hidden'; 
-        document.getElementsById("main").style.opacity = '1'
-        //let body = document.querySelector('body');
-        //body.style.background ="white";
+        document.querySelector("main").style.opacity = '1'
     };
 
     function couponload(){
         document.getElementById("container").style.visibility='visible';
-        document.getElementsById("main").style.opacity = '0.1';
+        document.querySelector("main").style.opacity = '0.1';
     }
      

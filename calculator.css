@@ -15,7 +15,7 @@ body{
     place-items: center;
     background: rgba(10,10,10,0.1)
 }
-#main{
+.main{
     position: relative;
     display: flex;
     align-items: center;
