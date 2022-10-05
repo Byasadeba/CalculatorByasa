@@ -57,11 +57,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     });
 
+    window.onload = couponload();
 
     function launchCalculator() { 
         let overlay = document.getElementById("container");
-        overlay.style.display = "none"; 
-        let body = document.querySelector('body');
-        body.style.background ="white";
+        overlay.style.visibility='hidden'; 
+        document.getElementsById("main").style.opacity = '1'
+        //let body = document.querySelector('body');
+        //body.style.background ="white";
+    };
+
+    function couponload(){
+        document.getElementById("container").style.visibility='visible';
+        document.getElementsById("main").style.opacity = '0.1';
     }
      

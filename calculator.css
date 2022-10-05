@@ -15,7 +15,7 @@ body{
     place-items: center;
     background: rgba(10,10,10,0.1)
 }
-.main{
+#main{
     position: relative;
     display: flex;
     align-items: center;
@@ -86,22 +86,26 @@ body{
 .dark_mode_active #history{
     color: #ddd
 }
+.dark_mode_active  footer{
+    color: #ddd
+}
 #history{
     position: absolute;bottom: 5px;right: 0
 }
 
-body{
+/* body{
     font-family:'Times New Roman', Times, serif;
     width:100%;
     height: 100%;
     background: #2a575a;
-}
+} */
 #container{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 101;
+    visibility: hidden;
 }
 .coupon{
     display: inline-block;
